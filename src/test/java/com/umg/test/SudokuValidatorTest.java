@@ -1,6 +1,6 @@
 package com.umg.test;
 
-import com.beesion.ms.test.sodoku.SudokuValidator;
+import com.umg.sodoku.SudokuValidator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

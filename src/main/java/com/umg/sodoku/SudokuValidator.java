@@ -1,4 +1,4 @@
-package com.beesion.ms.test.sodoku;
+package com.umg.sodoku;
 
 import java.util.HashSet;
 
