@@ -1,5 +1,6 @@
 package com.beesion.ms.test.resource;
 
+import com.beesion.ms.mapper.PersonMapper;
 import com.beesion.ms.model.Person;
 import com.beesion.ms.test.dto.PersonDto;
 import com.beesion.ms.test.service.impl.PersonService;
@@ -17,8 +18,7 @@ public class PersonaResource {
 
 	@POST
 	public Response save(PersonDto per) {
-		Person p = new Person();
-		p.setName(per.getName());
+		Person p = PersonMapper.toEntity(per);
 		person.save(p);
 		
 		return Response.ok("Elemento guardado").build();

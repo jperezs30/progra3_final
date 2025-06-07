@@ -9,9 +9,6 @@ import jakarta.inject.Inject;
 
 @ApplicationScoped
 public class PersonService implements IPersonService{
-
-	//@Inject 
-	PersonRepo personRepo = new PersonRepo();
 	
 	@Inject 
 	PersonRepo personRepos;
