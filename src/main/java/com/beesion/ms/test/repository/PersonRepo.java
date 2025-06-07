@@ -19,5 +19,11 @@ public class PersonRepo implements IPersonRepo {
 	public void save(Person per) {
 		em.persist(per);
 	}
+	
+	@Transactional
+	public Person findById(Long id) {
+   		return em.find(Person.class, id);
+	}
+
 
 }
